@@ -133,11 +133,7 @@ header nav ul li a{
 	border-top: 1px solid #eee;
 }
 
-.section-one h4 {
-	padding: 10px 0;
-}
-
-
+.section-one h4,
 .section-two h4,
 .section-three h4 {
 	padding: 10px 0px;
@@ -177,4 +173,62 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 14px;
+}
+
+
+@media all and (min-width:768px) {
+
+	.bottom-section{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 33%;
+	}
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+
+	.section-two h4,
+	.section-three h4 {
+		padding: 10px 16px;
+	}
+
+	.reviews {
+		padding: 10px 16px;
+	}
+
+	.address {
+		padding: 10px 16px;
+	}
+
+}
+
+ 
+@media all and (min-width:1200px) {
+	
+	header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	header h1 {
+		border-bottom: none;
+		width: 50%;
+		text-align: left;
+	}
+
+	header nav {
+		width: 40%;
+	}
+	
+	header nav ul {
+		flex-direction: row;
+		justify-content: space-between;
+ 
 }
